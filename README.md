@@ -1,3 +1,4 @@
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=22335415)
 # cpp_makingArt
 
 This small project generates a `mandelbrot.html` file using a single C++ source file (`main.cpp`). Below are step-by-step instructions students can follow to build, run, and preview the output.
