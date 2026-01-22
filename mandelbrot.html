@@ -7,7 +7,16 @@ const canvas = document.getElementById('c');
 const ctx = canvas.getContext('2d');
 const img = ctx.createImageData(800, 600);
 let data = img.data;
-let i = 0;
+
+let palette = [
+  {r: 54, g: 243, b: 100},
+  {r: 250, g: 70, b: 100},
+  {r: 90, g: 10, b: 92},
+  {r: 10, g: 100, b: 150},
+  {r: 5, g: 25, b: 205}
+];
+
+let idx = 0;
 for (let y = 0; y < 600; y++) {
   for (let x = 0; x < 800; x++) {
     let zx = 0, zy = 0;
@@ -20,13 +29,15 @@ for (let y = 0; y < 600; y++) {
       zx = tmp;
       iter--;
     }
-    let color = iter | (iter << 8);
-    data[i++] = (color >> 16) & 255;
-    data[i++] = (color >> 8) & 255;
-    data[i++] = color & 255;
-    data[i++] = 255;
+    let index = iter % 5;
+    let color = palette[index];
+    data[idx++] = color.r;
+    data[idx++] = color.g;
+    data[idx++] = color.b;
+    data[idx++] = 255;
   }
 }
+
 ctx.putImageData(img, 0, 0);
 </script>
 </body>
