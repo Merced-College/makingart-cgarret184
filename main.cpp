@@ -5,11 +5,11 @@
 #include <fstream>
 
 // You can change these colors and add more.
-const int PALETTE_SIZE = 5;
+const int PALETTE_SIZE = 6;
 
-int red[PALETTE_SIZE]   = { 54, 250,  90,   10, 5 };
-int green[PALETTE_SIZE] = { 243,  70,  10,   100, 25 };
-int blue[PALETTE_SIZE]  = { 100, 100, 92, 150, 205 };
+int red[PALETTE_SIZE]   = { 54, 250,  90,   10, 5, 36};
+int green[PALETTE_SIZE] = { 243,  70,  10,   100, 25, 87};
+int blue[PALETTE_SIZE]  = { 100, 100, 92, 150, 205, 106};
 
 int main() {
     const int WIDTH = 800;

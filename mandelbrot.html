@@ -13,7 +13,8 @@ let palette = [
   {r: 250, g: 70, b: 100},
   {r: 90, g: 10, b: 92},
   {r: 10, g: 100, b: 150},
-  {r: 5, g: 25, b: 205}
+  {r: 5, g: 25, b: 205},
+  {r: 36, g: 87, b: 106}
 ];
 
 let idx = 0;
@@ -29,7 +30,7 @@ for (let y = 0; y < 600; y++) {
       zx = tmp;
       iter--;
     }
-    let index = iter % 5;
+    let index = iter % 6;
     let color = palette[index];
     data[idx++] = color.r;
     data[idx++] = color.g;
