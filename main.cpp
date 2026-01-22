@@ -1,3 +1,6 @@
+// Garret Clark 1-22-26
+// This program generates a mandelbrot html file that you can open in your browser and view. 
+
 #include <iostream>
 #include <fstream>
 
